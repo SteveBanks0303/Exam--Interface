@@ -1,0 +1,239 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f1f1;
+  justify-content: center; 
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-image: url(001.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.button-container {
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+#calculator {
+background-color: #007bff; 
+color: #fff; 
+padding: 8px 14px; 
+font-size: 12px; 
+border: none; 
+cursor: pointer; 
+border-radius: 2px; 
+text-transform: uppercase; 
+margin-left: 90px;
+}
+
+#calculator:hover {
+background-color: #0056b3; 
+}
+
+#examName {
+background-color: #f37d0f; 
+color: #fff; 
+padding: 5px 40px;
+font-size: 12px;
+border: none; 
+cursor: pointer; 
+border-radius: 2px;
+text-transform: uppercase; 
+margin-left: 90px;
+}
+
+#examName:hover {
+background-color: #f37712;
+}
+
+#hours,
+#minutes,
+#seconds {
+color: #ffffff;
+font-size: 20px;
+font-weight: bolder;
+}
+
+#hours {
+  margin-left: 250px;
+}
+
+#endExamButton {
+background-color: #ee492c; 
+color: #fff; 
+padding: 6px 12px;
+font-size: 12px;
+border: none; 
+cursor: pointer;
+border-radius: 2px; 
+text-transform: uppercase;
+margin-left: 150px;
+
+}
+
+#endExamButton:hover {
+background-color: #f37712;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Set row direction */
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 10px;
+  top: -60px;
+  width: 80%; 
+  padding-left: 90px;
+}
+
+/* Left column styles */
+.left-column {
+  flex: 1; /* Take 1/3 of the available space */
+}
+
+.left-column .image-box {
+  width: 120px;
+  height: 120px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  overflow: hidden; 
+  position: relative; 
+  margin-left: 70px;
+}
+
+/* Style the image inside the image-box */
+.left-column .image-box img {
+  max-width: 100%;
+  max-height: 150%;
+  object-fit: cover;
+}
+
+.student-info {
+  
+  padding: 10px;
+  margin-top: 20px;
+  position: relative; 
+  margin-left: 70px;
+}
+
+.student-info p {
+  margin: 0;
+}
+
+.student-info p:nth-child(odd) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+/* Center column styles (wider) */
+.center-column {
+  flex: 2; /* Take 2/3 of the available space */
+}
+
+
+.section.center-column p {
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Reduce the space between paragraphs */
+
+}
+
+/* Additional styles for the question box, if needed */
+.question-box p {
+  font-size: 16px;
+  margin-top: 50px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0; /* Optional: remove left padding for the list */
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  margin-top: 20px;
+  align-items: center 
+}
+/* Style the Previous button */
+#navigation button:first-child {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: background-color 0.2s;
+}
+
+#navigation button:first-child:hover {
+  background-color: #0056b3;
+}
+
+/* Style the Next button */
+#navigation button:last-child {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  transition: background-color 0.2s;
+}
+
+#navigation button:last-child:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* Right column styles */
+.right-column {
+  flex: 1; /* Take 1/3 of the available space */
+}
+
+
+footer {
+  background-image: url(002.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+
